@@ -1,0 +1,25 @@
+1. An app that students can use to track school buses, drivers share their locations which students can view here is the link to the google play page: https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US
+2. ive placed the logo in the project folder as  SafeRouteTransparent512.svg, the main color is orange Color(0xFFFF9100)
+3. Yes, screenshots are in the Screenshots folder
+4. Google Play
+5. https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US
+
+6. the main color is orange Color(0xFFFF9100)
+7/8. serious with playful undertones
+9. ive placed the logo in the project folder as  SafeRouteTransparent512.svg
+
+10. real-time bus tracking, check-in system, notifications, estimated time of arrival
+11. no
+12. not really
+
+13. email: samuel.ben.tsui@gmail.com phone: 781-528-7806
+14. form built into webpage (goes to my email)
+15. name, email, message
+
+16. username.github.io/SafeRouteWebsite is fine
+17. no
+18. no
+
+19. school districts, students, teachers, administrators
+20. two pages: landing, contact with easy way to navigate between
+21. sure
