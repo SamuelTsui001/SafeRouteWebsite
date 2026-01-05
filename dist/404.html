@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SafeRoute - School Bus Tracking</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // GitHub Pages base path
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      var basePath = '/SafeRouteWebsite';
+      var path = l.pathname;
+      
+      // Remove base path if present
+      if (path.startsWith(basePath)) {
+        path = path.slice(basePath.length);
+      }
+      
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        basePath + '/?/' +
+        path.slice(1).replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
