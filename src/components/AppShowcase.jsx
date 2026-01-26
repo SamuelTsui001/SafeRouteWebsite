@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Apple } from 'lucide-react'
 
 // Screenshots from public folder
 const baseUrl = import.meta.env.BASE_URL
@@ -91,11 +91,10 @@ function AppShowcase() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex
-                    ? 'bg-primary w-8'
-                    : 'bg-gray-300 hover:bg-gray-400 w-2'
-                }`}
+                className={`h-2 rounded-full transition-all ${index === currentIndex
+                  ? 'bg-primary w-8'
+                  : 'bg-gray-300 hover:bg-gray-400 w-2'
+                  }`}
                 aria-label={`Go to screenshot ${index + 1}`}
               />
             ))}
@@ -106,8 +105,17 @@ function AppShowcase() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center mt-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
           >
+            <a
+              href="https://apps.apple.com/us/app/safe-route/id6758110091"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <Apple size={24} />
+              <span>Download on App Store</span>
+            </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
               target="_blank"

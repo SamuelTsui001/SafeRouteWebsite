@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { ArrowRight, Download } from 'lucide-react'
+import { ArrowRight, Download, Apple } from 'lucide-react'
 
 function Hero() {
   return (
@@ -48,7 +47,7 @@ function Hero() {
               Track Your School Bus in
               <span className="text-primary block mt-2">Real-Time</span>
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,6 +63,16 @@ function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
+              <a
+                href="https://apps.apple.com/us/app/safe-route/id6758110091"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center space-x-2 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <Apple size={24} />
+                <span>Download on App Store</span>
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
                 target="_blank"
@@ -109,6 +118,8 @@ function Hero() {
 }
 
 export default Hero
+
+
 
 
 
