@@ -11,9 +11,9 @@ function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src={logo} 
-                alt="SafeRoute Logo" 
+              <img
+                src={logo}
+                alt="SafeRoute Logo"
                 className="h-8 w-8"
               />
               <span className="text-xl font-display font-bold text-primary">
@@ -41,12 +41,22 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href="https://apps.apple.com/us/app/safe-route/id6758110091"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Download for iOS
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary transition-colors"
                 >
-                  Download App
+                  Download for Android
                 </a>
               </li>
             </ul>
@@ -58,7 +68,7 @@ function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-gray-400">
                 <Mail size={18} />
-                <a 
+                <a
                   href="mailto:samuel.ben.tsui@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
@@ -67,7 +77,7 @@ function Footer() {
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Phone size={18} />
-                <a 
+                <a
                   href="tel:781-528-7806"
                   className="hover:text-primary transition-colors"
                 >

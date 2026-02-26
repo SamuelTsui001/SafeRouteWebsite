@@ -65,14 +65,22 @@ function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <a
+                href="https://apps.apple.com/us/app/safe-route/id6758110091"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-black text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center space-x-2 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <Download size={24} />
+                <span>Download on the App Store</span>
+              </a>
+              <a
                 href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center space-x-2 hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <Download size={24} />
-                <span>Download on Google Play</span>
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                <span>Get it on Google Play</span>
               </a>
               <a
                 href="#features"

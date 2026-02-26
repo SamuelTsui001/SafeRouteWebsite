@@ -91,11 +91,10 @@ function AppShowcase() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex
+                className={`h-2 rounded-full transition-all ${index === currentIndex
                     ? 'bg-primary w-8'
                     : 'bg-gray-300 hover:bg-gray-400 w-2'
-                }`}
+                  }`}
                 aria-label={`Go to screenshot ${index + 1}`}
               />
             ))}
@@ -106,15 +105,23 @@ function AppShowcase() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center mt-12"
+            className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
+            <a
+              href="https://apps.apple.com/us/app/safe-route/id6758110091"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-black text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
+            >
+              Download on the App Store
+            </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
             >
-              Download Now on Google Play
+              Get it on Google Play
             </a>
           </motion.div>
         </motion.div>

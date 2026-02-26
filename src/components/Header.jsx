@@ -25,9 +25,9 @@ function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src={logo} 
-              alt="SafeRoute Logo" 
+            <img
+              src={logo}
+              alt="SafeRoute Logo"
               className="h-10 w-10"
             />
             <span className="text-2xl font-display font-bold text-primary">
@@ -41,11 +41,10 @@ function Header() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-3 py-2 font-medium transition-colors ${
-                  location.pathname === item.path
+                className={`relative px-3 py-2 font-medium transition-colors ${location.pathname === item.path
                     ? 'text-primary'
                     : 'text-gray-700 hover:text-primary'
-                }`}
+                  }`}
               >
                 {item.label}
                 {location.pathname === item.path && (
@@ -58,14 +57,24 @@ function Header() {
                 )}
               </Link>
             ))}
-            <a
-              href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl"
-            >
-              Download App
-            </a>
+            <div className="flex space-x-2">
+              <a
+                href="https://apps.apple.com/us/app/safe-route/id6758110091"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-sm hover:shadow"
+              >
+                iOS
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors shadow-sm hover:shadow"
+              >
+                Android
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,23 +103,31 @@ function Header() {
                     key={item.path}
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-4 py-2 rounded-lg font-medium transition-colors ${
-                      location.pathname === item.path
+                    className={`block px-4 py-2 rounded-lg font-medium transition-colors ${location.pathname === item.path
                         ? 'text-primary bg-primary/10'
                         : 'text-gray-700 hover:text-primary hover:bg-gray-100'
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </Link>
                 ))}
                 <a
+                  href="https://apps.apple.com/us/app/safe-route/id6758110091"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="block bg-black text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-800 transition-colors"
+                >
+                  Download for iOS
+                </a>
+                <a
                   href="https://play.google.com/store/apps/details?id=com.safe_route&hl=en_US"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
-                  className="block bg-primary text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-primary-dark transition-colors"
+                  className="block bg-primary text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-primary-dark transition-colors mt-2"
                 >
-                  Download App
+                  Download for Android
                 </a>
               </div>
             </motion.div>
