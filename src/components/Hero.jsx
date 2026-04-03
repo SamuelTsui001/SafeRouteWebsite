@@ -94,9 +94,9 @@ function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-6 text-sm text-gray-500 bg-white/50 backdrop-blur-sm py-2 px-4 rounded-full inline-block border border-gray-200"
+              className="mt-6 text-lg text-gray-600 bg-white/50 backdrop-blur-sm py-3 px-6 rounded-full inline-block border border-gray-200 shadow-sm"
             >
-              Test the app using student school code <span className="font-semibold text-gray-800">STU123</span> and driver school code <span className="font-semibold text-gray-800">DRV456</span>
+              Test the app using student school code <span className="font-bold text-gray-900">STU123</span> and driver school code <span className="font-bold text-gray-900">DRV456</span>
             </motion.div>
           </motion.div>
         </div>
