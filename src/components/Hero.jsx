@@ -48,7 +48,7 @@ function Hero() {
               Track Your School Bus in
               <span className="text-primary block mt-2">Real-Time</span>
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
             >
               <a
                 href="https://apps.apple.com/us/app/safe-route/id6758110091"
@@ -88,6 +88,15 @@ function Hero() {
               >
                 Learn More
               </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="mt-6 text-sm text-gray-500 bg-white/50 backdrop-blur-sm py-2 px-4 rounded-full inline-block border border-gray-200"
+            >
+              Test the app using student school code <span className="font-semibold text-gray-800">STU123</span> and driver school code <span className="font-semibold text-gray-800">DRV456</span>
             </motion.div>
           </motion.div>
         </div>
